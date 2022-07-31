@@ -4,6 +4,7 @@ node_modules
 #settings
 .env
 config.json
+config.js
 
 #Visual Studio Code
 .vs
