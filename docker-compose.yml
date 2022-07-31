@@ -1,0 +1,16 @@
+---
+version: "3"
+services:
+  discordbot_v14:
+    hostname: "discordbot_v14"
+    container_name: "discordbot_v14"
+    environment:
+      - "PGID=1000"
+      - "PUID=1000"
+      - "TZ=Europe/Berlin"
+      - "UMASK=022"
+      - "TERM=xterm"
+    image: "ghcr.io/cyb3rgh05t/mr.streamnet_v14:latest"
+    restart: "unless-stopped"
+    volumes:
+      - "/opt/appdata/discordbot_v14/config:/usr/src/bot/src/config:rw"

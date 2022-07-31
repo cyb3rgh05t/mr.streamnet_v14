@@ -4,7 +4,7 @@ A setup of discordjs v14 bot.
 Features:
 - Slash Command Supported
 - Prefix Command Supported
-- Executes he bot In a Base Class
+- Executes the bot In a Base Class
 - Custom Multi Prefixes
 
 **Easy to Read**
