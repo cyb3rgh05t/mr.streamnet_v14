@@ -34,12 +34,10 @@ const client = new Client({
 });
 
 client.config = require("./config.json");
+client.events = new Collection();
 client.commands = new Collection();
 client.buttons = new Collection();
 
+loadEvents(client);
+
 client.login(client.config.token)
-  .then(() => {
-    console.log(`client logged in as ${client.user.username}`);
-    client.user.setActivity(`with ${client.guilds.cache.size} guilds`);
-  })
-  .catch((err) => console.log(err));
