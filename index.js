@@ -22,9 +22,6 @@ const {
   loadEvents
 } = require("./Handlers/eventHandler");
 const {
-  loadCommands
-} = require("./Handlers/commandHandler");
-const {
   loadButtons
 } = require("./Handlers/buttonHandler");
 
@@ -39,5 +36,6 @@ client.commands = new Collection();
 client.buttons = new Collection();
 
 loadEvents(client);
+loadButtons(client);
 
 client.login(client.config.token)
